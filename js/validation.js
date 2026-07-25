@@ -74,7 +74,7 @@ async function startValidation() {
         console.log("4. About to call fetch");
 
         const response = await fetch(
-            "http://127.0.0.1:8000/validate/",
+            "https://researchcopilot7.netlify.app/",
             {
                 method: "POST",
                 headers: {
