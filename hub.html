@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Project Hub | ResearchCopilot</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Lucide Icons -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Existing CSS -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Hub CSS -->
+
+    <link rel="stylesheet" href="css/hub.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- ===========================================
+                SIDEBAR
+=========================================== -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            RC
+        </div>
+
+        <div>
+
+            <h2>Research</h2>
+
+            <span>Copilot</span>
+
+        </div>
+
+    </div>
+
+    <nav class="nav">
+
+        <a href="index.html">
+
+            <i data-lucide="home"></i>
+
+            Home
+
+        </a>
+
+        <a href="research.html">
+
+            <i data-lucide="search"></i>
+
+            Research
+
+        </a>
+
+        <a href="#" class="active">
+
+            <i data-lucide="layout-dashboard"></i>
+
+            Project Hub
+
+        </a>
+
+        <a href="dashboard.html">
+
+            <i data-lucide="folder"></i>
+
+            Dashboard
+
+        </a>
+
+    </nav>
+
+</aside>
+
+<!-- ===========================================
+                MAIN
+=========================================== -->
+
+<main class="main">
+
+<header class="header">
+
+<div>
+
+<h1>
+
+Project Hub
+
+</h1>
+
+<p>
+
+AI Generated Development Blueprint
+
+</p>
+
+</div>
+
+<div class="header-right">
+
+<div class="badge badge-green">
+
+Ready to Build
+
+</div>
+
+</div>
+
+</header>
+
+<div class="hub-container">
+
+<!-- ===========================================
+        PROJECT OVERVIEW
+=========================================== -->
+
+<section class="card overview">
+
+<h2>
+
+Project Overview
+
+</h2>
+
+<p id="project-overview">
+
+Loading...
+
+</p>
+
+<div class="overview-grid">
+
+<div class="metric">
+
+<h3>4 Weeks</h3>
+
+<span>Estimated Timeline</span>
+
+</div>
+
+<div class="metric">
+
+<h3>Medium</h3>
+
+<span>Difficulty</span>
+
+</div>
+
+<div class="metric">
+
+<h3>7.8 / 10</h3>
+
+<span>Complexity</span>
+
+</div>
+
+<div class="metric">
+
+<h3>92%</h3>
+
+<span>Success Potential</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================================
+        ARCHITECTURE
+=========================================== -->
+
+<section class="card">
+
+<h2>
+
+Suggested Architecture
+
+</h2>
+
+<div id="architecture">
+
+<div class="node">
+
+<i data-lucide="monitor"></i>
+
+<span>User</span>
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="node">
+
+<i data-lucide="layout-template"></i>
+
+<span>Frontend</span>
+
+<small>React</small>
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="node">
+
+<i data-lucide="server"></i>
+
+<span>Backend</span>
+
+<small>FastAPI</small>
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="node">
+
+<i data-lucide="brain"></i>
+
+<span>Gemini API</span>
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="node">
+
+<i data-lucide="database"></i>
+
+<span>PostgreSQL</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================================
+        TECH STACK
+=========================================== -->
+
+<section class="card">
+
+<h2>
+
+Recommended Tech Stack
+
+</h2>
+
+<div
+class="tech-grid"
+id="tech-grid">
+
+<!-- JS -->
+
+</div>
+
+</section>
+
+<!-- ===========================================
+        ROADMAP
+=========================================== -->
+
+<section class="card">
+
+<h2>
+
+Development Roadmap
+
+</h2>
+
+<div
+class="roadmap"
+id="roadmap">
+
+<!-- JS -->
+
+</div>
+
+</section>
+
+<!-- ===========================================
+        FEATURES
+=========================================== -->
+
+<section class="card">
+
+<h2>
+
+Suggested MVP Features
+
+</h2>
+
+<div
+class="feature-grid"
+id="feature-grid">
+
+<!-- JS -->
+
+</div>
+
+</section>
+
+<!-- ===========================================
+        DELIVERABLES
+=========================================== -->
+
+<section class="card">
+
+<h2>
+
+Final Deliverables
+
+</h2>
+
+<ul
+class="deliverables"
+id="deliverables">
+
+<!-- JS -->
+
+</ul>
+
+</section>
+
+<!-- ===========================================
+        FOOTER ACTION
+=========================================== -->
+
+<section class="hub-footer">
+
+<button
+id="continueDashboard"
+class="primary-btn">
+
+Continue to Dashboard →
+
+</button>
+
+</section>
+
+</div>
+
+</main>
+
+</div>
+
+<script>
+
+lucide.createIcons();
+
+</script>
+
+<script src="js/hub.js"></script>
+
+</body>
+
+</html>

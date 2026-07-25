@@ -1,0 +1,186 @@
+/* ===========================================
+   ResearchCopilot Design System
+   Inspired by Linear + Perplexity
+=========================================== */
+
+:root{
+
+/* ===========================
+   COLORS
+=========================== */
+
+--bg: #F8F9FB;
+--surface: #FFFFFF;
+--surface-hover: #F3F4F6;
+
+--sidebar: #111827;
+--sidebar-hover: #1F2937;
+
+--primary: #2563EB;
+--primary-hover: #1D4ED8;
+
+--success: #16A34A;
+--warning: #FACC15;
+--danger: #DC2626;
+
+--text: #111827;
+--text-secondary: #6B7280;
+--text-light: #9CA3AF;
+
+--border: #E5E7EB;
+
+
+/* ===========================
+   SHADOWS
+=========================== */
+
+--shadow-sm:
+0 1px 2px rgba(0,0,0,0.05);
+
+--shadow:
+0 4px 12px rgba(15,23,42,.06);
+
+--shadow-lg:
+0 12px 28px rgba(15,23,42,.10);
+
+
+/* ===========================
+   BORDER RADIUS
+=========================== */
+
+--radius-sm:8px;
+--radius:12px;
+--radius-lg:18px;
+--radius-xl:24px;
+--radius-pill:999px;
+
+
+/* ===========================
+   SPACING
+=========================== */
+
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:20px;
+--space-6:24px;
+--space-8:32px;
+--space-10:40px;
+--space-12:48px;
+--space-16:64px;
+
+
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+
+--font-family:
+'Inter',
+sans-serif;
+
+--fs-xs:.75rem;
+--fs-sm:.875rem;
+--fs-md:1rem;
+--fs-lg:1.125rem;
+--fs-xl:1.35rem;
+--fs-2xl:1.75rem;
+--fs-3xl:2.25rem;
+--fs-4xl:3rem;
+
+--fw-normal:400;
+--fw-medium:500;
+--fw-semibold:600;
+--fw-bold:700;
+--fw-black:800;
+
+
+/* ===========================
+   TRANSITIONS
+=========================== */
+
+--transition:
+all .25s ease;
+
+--transition-fast:
+all .15s ease;
+
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+--sidebar-width:270px;
+
+--header-height:90px;
+
+--container-width:1400px;
+
+
+/* ===========================
+   Z INDEX
+=========================== */
+
+--z-sidebar:100;
+--z-header:50;
+--z-modal:500;
+
+}
+
+
+
+/* ===========================================
+   Utility Variables
+=========================================== */
+
+body{
+
+background:var(--bg);
+
+color:var(--text);
+
+font-family:var(--font-family);
+
+}
+
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#ECEFF4;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#CBD5E1;
+
+border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#94A3B8;
+
+}
+
+
+
+/* Selection */
+
+::selection{
+
+background:#BFDBFE;
+
+color:#111827;
+
+}

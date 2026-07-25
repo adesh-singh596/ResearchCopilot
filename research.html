@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Research Dashboard</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Existing CSS -->
+
+    <link rel="stylesheet" href="css/variables.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/layout.css">
+
+    <link rel="stylesheet" href="css/components.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- New CSS -->
+
+    <link rel="stylesheet" href="css/research.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!---------------------------------------
+            SIDEBAR
+---------------------------------------->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<div class="logo-icon">
+
+RC
+
+</div>
+
+<div>
+
+<h2>Research</h2>
+
+<span>Copilot</span>
+
+</div>
+
+</div>
+
+<nav class="nav">
+
+<a href="index.html">
+
+<i data-lucide="home"></i>
+
+Home
+
+</a>
+
+<a href="#" class="active">
+
+<i data-lucide="search"></i>
+
+Research
+
+</a>
+
+<a href="#">
+
+<i data-lucide="folder"></i>
+
+Projects
+
+</a>
+
+<a href="#">
+
+<i data-lucide="git-branch"></i>
+
+Architecture
+
+</a>
+
+</nav>
+
+</aside>
+
+<!---------------------------------------
+            MAIN
+---------------------------------------->
+
+<main class="main">
+
+<header class="header">
+
+<div>
+
+<h1>
+
+Research Report
+
+</h1>
+
+<p>
+
+Generated from your project idea
+
+</p>
+
+</div>
+
+<div class="header-right">
+
+<div class="badge badge-green">
+Research Complete
+✓ 
+
+</div>
+
+</div>
+
+</header>
+
+<div class="research-container">
+<!-- ===============================
+VALIDATION DASHBOARD
+================================ -->
+
+<section class="score-dashboard">
+
+    <div class="score-card">
+
+        <div class="score-number" id="score-number">
+
+            0
+
+        </div>
+
+        <div class="score-label">
+
+            Validation Score
+
+        </div>
+
+    </div>
+
+    <div class="score-info">
+
+        <h2 id="verdict-text">
+
+            Loading...
+
+        </h2>
+
+        <p>
+
+            AI evaluation based on
+            feasibility, innovation,
+            scalability and technical complexity.
+
+        </p>
+
+    </div>
+
+</section>
+
+<div class="research-container">
+
+<!-- ===============================
+SUMMARY
+================================ -->
+
+<section class="summary card fade-up">
+
+<h2>
+
+Executive Summary
+
+</h2>
+
+<p id="summary-text">
+
+Loading summary...
+
+</p>
+
+<div class="summary-stats">
+
+<div>
+
+<h3>17</h3>
+
+<span>Sources</span>
+
+</div>
+
+<div>
+
+<h3>91%</h3>
+
+<span>Confidence</span>
+
+</div>
+
+<div>
+
+<h3>4 hrs</h3>
+
+<span>Time Saved</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===============================
+AI INSIGHTS
+================================ -->
+
+<section class="insights">
+
+    <div class="insight-card">
+
+        <h2>✅ Strengths</h2>
+
+        <ul id="strength-list">
+
+        </ul>
+
+    </div>
+
+    <div class="insight-card">
+
+        <h2>⚠ Weaknesses</h2>
+
+        <ul id="weakness-list">
+
+        </ul>
+
+    </div>
+
+</section>
+<!-- ===============================
+SOURCE SECTION
+================================ -->
+
+<section class="sources">
+
+<div class="section-title">
+
+<h2>
+
+Sources
+
+</h2>
+
+<p>
+
+Trusted information collected by AI
+
+</p>
+
+</div>
+
+<div class="source-grid"
+     id="source-grid">
+
+<!-- JS will inject cards -->
+
+</div>
+
+</section>
+
+<!-- ===============================
+COMPARISON TABLE
+================================ -->
+
+<section class="comparison">
+
+<div class="section-title">
+
+<h2>
+
+Existing Solutions
+
+</h2>
+
+</div>
+
+<div class="table-wrapper">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Solution</th>
+
+<th>Technology</th>
+
+<th>Strength</th>
+
+<th>Limitation</th>
+
+</tr>
+
+</thead>
+
+<tbody id="comparison-table">
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- ===============================
+GAP ANALYSIS
+================================ -->
+
+<section class="gap-analysis card">
+
+<div class="gap-header">
+
+<i data-lucide="lightbulb"></i>
+
+<h2>
+
+Innovation Opportunity
+
+</h2>
+
+</div>
+
+<p id="gap-text">
+
+Loading...
+
+</p>
+
+</section>
+
+<!-- ===============================
+TECH STACK
+================================ -->
+
+<section class="tech-stack">
+
+<div class="section-title">
+
+<h2>
+
+Recommended Tech Stack
+
+</h2>
+
+</div>
+
+<div
+class="tech-list"
+id="tech-list">
+
+</div>
+
+</section>
+
+<!-- ===============================
+NEXT
+================================ -->
+
+<section
+class="next-step">
+
+<button
+id="continueHub"
+class="primary-btn">
+
+Continue to Project Hub →
+
+</button>
+
+</section>
+
+</div>
+
+</main>
+
+</div>
+
+<script>
+
+lucide.createIcons();
+
+</script>
+
+<script src="js/research.js"></script>
+
+</body>
+
+</html>

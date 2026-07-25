@@ -1,0 +1,177 @@
+/* ===========================================
+   RESET
+=========================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    font-size:16px;
+}
+
+body{
+    min-height:100vh;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* ===========================================
+   TYPOGRAPHY
+=========================================== */
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:700;
+    color:var(--text);
+}
+
+p{
+    color:var(--text-secondary);
+    line-height:1.7;
+}
+
+small{
+    font-size:var(--fs-sm);
+}
+
+/* ===========================================
+   LINKS
+=========================================== */
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* ===========================================
+   LISTS
+=========================================== */
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* ===========================================
+   IMAGES
+=========================================== */
+
+img,
+picture,
+svg{
+    display:block;
+    max-width:100%;
+}
+
+img{
+    user-select:none;
+}
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font:inherit;
+    background:none;
+}
+
+button:disabled{
+    cursor:not-allowed;
+    opacity:.6;
+}
+
+/* ===========================================
+   INPUTS
+=========================================== */
+
+input,
+textarea,
+select{
+    font:inherit;
+    outline:none;
+    border:none;
+    background:none;
+}
+
+textarea{
+    resize:none;
+}
+
+/* ===========================================
+   TABLES
+=========================================== */
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* ===========================================
+   UTILITIES
+=========================================== */
+
+.hidden{
+    display:none !important;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.flex{
+    display:flex;
+}
+
+.grid{
+    display:grid;
+}
+
+.w-full{
+    width:100%;
+}
+
+.h-full{
+    height:100%;
+}
+
+/* ===========================================
+   FOCUS RING
+=========================================== */
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible{
+    outline:3px solid rgba(37,99,235,.25);
+    outline-offset:2px;
+}
+
+/* ===========================================
+   PLACEHOLDERS
+=========================================== */
+
+::placeholder{
+    color:var(--text-light);
+}
+
+/* ===========================================
+   TRANSITIONS
+=========================================== */
+
+button,
+a,
+input,
+textarea,
+select{
+    transition:var(--transition);
+}

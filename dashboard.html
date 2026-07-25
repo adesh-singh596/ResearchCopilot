@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | ResearchCopilot</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Lucide -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Existing CSS -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Dashboard CSS -->
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- ======================================
+            SIDEBAR
+======================================= -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<div class="logo-icon">
+
+RC
+
+</div>
+
+<div>
+
+<h2>Research</h2>
+
+<span>Copilot</span>
+
+</div>
+
+</div>
+
+<nav class="nav">
+
+<a href="index.html">
+
+<i data-lucide="home"></i>
+
+Home
+
+</a>
+
+<a href="research.html">
+
+<i data-lucide="search"></i>
+
+Research
+
+</a>
+
+<a href="hub.html">
+
+<i data-lucide="layout-dashboard"></i>
+
+Project Hub
+
+</a>
+
+<a href="#" class="active">
+
+<i data-lucide="folder"></i>
+
+Dashboard
+
+</a>
+
+</nav>
+
+</aside>
+
+<!-- ======================================
+            MAIN
+======================================= -->
+
+<main class="main">
+
+<header class="header">
+
+<div>
+
+<h1>
+
+Dashboard
+
+</h1>
+
+<p>
+
+Manage all your AI research projects
+
+</p>
+
+</div>
+
+<button class="primary-btn">
+
+<i data-lucide="plus"></i>
+
+New Project
+
+</button>
+
+</header>
+
+<div class="dashboard-container">
+
+<!-- ======================================
+            STATS
+======================================= -->
+
+<section class="stats-grid">
+
+<div class="stat-card">
+
+<i data-lucide="folder-kanban"></i>
+
+<h2 id="totalProjects">
+
+0
+
+</h2>
+
+<p>
+
+Projects
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i data-lucide="file-text"></i>
+
+<h2 id="totalReports">
+
+0
+
+</h2>
+
+<p>
+
+Research Reports
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i data-lucide="clock-3"></i>
+
+<h2 id="timeSaved">
+
+0 hrs
+
+</h2>
+
+<p>
+
+Time Saved
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<i data-lucide="trending-up"></i>
+
+<h2 id="successRate">
+
+0%
+
+</h2>
+
+<p>
+
+Success Rate
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        MAIN GRID
+======================================= -->
+
+<div class="dashboard-grid">
+
+<!-- LEFT -->
+
+<div class="left-column">
+
+<!-- Recent Projects -->
+
+<section class="card">
+
+<div class="section-header">
+
+<h2>
+
+Recent Projects
+
+</h2>
+
+<a href="#">
+
+View All
+
+</a>
+
+</div>
+
+<div
+id="projects-list"
+class="projects-list">
+
+</div>
+
+</section>
+
+<!-- Continue Working -->
+
+<section class="card">
+
+<div class="section-header">
+
+<h2>
+
+Continue Working
+
+</h2>
+
+</div>
+
+<div
+id="continue-project">
+
+</div>
+
+</section>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="right-column">
+
+<!-- Activity -->
+
+<section class="card">
+
+<div class="section-header">
+
+<h2>
+
+Recent Activity
+
+</h2>
+
+</div>
+
+<div
+id="activity-list"
+class="activity-list">
+
+</div>
+
+</section>
+
+<!-- Quick Actions -->
+
+<section class="card">
+
+<div class="section-header">
+
+<h2>
+
+Quick Actions
+
+</h2>
+
+</div>
+
+<div
+class="action-grid">
+
+<button class="action-btn">
+
+<i data-lucide="search"></i>
+
+New Research
+
+</button>
+
+<button class="action-btn">
+
+<i data-lucide="download"></i>
+
+Export PDF
+
+</button>
+
+<button class="action-btn">
+
+<i data-lucide="layout-dashboard"></i>
+
+Project Hub
+
+</button>
+
+<button class="action-btn">
+
+<i data-lucide="settings"></i>
+
+Settings
+
+</button>
+
+</div>
+
+</section>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script>
+
+lucide.createIcons();
+
+</script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

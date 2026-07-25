@@ -1,0 +1,217 @@
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+@keyframes pulse{
+
+    0%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:.55;
+
+    }
+
+    100%{
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+.fade-up{
+
+    animation:fadeUp .7s ease forwards;
+
+}
+
+
+
+.fade{
+
+    animation:fade .5s ease forwards;
+
+}
+
+
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+
+
+/* Hover Lift */
+
+.hover-lift{
+
+    transition:var(--transition);
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+
+/* Scale */
+
+.scale{
+
+    transition:var(--transition);
+
+}
+
+.scale:hover{
+
+    transform:scale(1.02);
+
+}
+
+
+
+/* Glass Blur */
+
+.glass{
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+}
+
+
+
+/* Loading Skeleton */
+
+.skeleton{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#ECEFF4;
+
+}
+
+.skeleton::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    transform:translateX(-100%);
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.6),
+
+        transparent
+
+    );
+
+    animation:skeleton 1.5s infinite;
+
+}
+
+@keyframes skeleton{
+
+    100%{
+
+        transform:translateX(100%);
+
+    }
+
+}

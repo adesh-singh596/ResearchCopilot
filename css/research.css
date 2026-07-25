@@ -1,0 +1,557 @@
+/* ==========================================================
+   RESEARCH PAGE
+========================================================== */
+
+.research-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:24px;
+
+}
+
+/* ==========================================================
+   SECTION TITLE
+========================================================== */
+
+.section-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    margin-bottom:16px;
+
+}
+
+.section-title h2{
+
+    font-size:24px;
+
+    margin-bottom:6px;
+
+}
+
+.section-title p{
+
+    color:var(--text-secondary);
+
+}
+
+/* ==========================================================
+   SUMMARY CARD
+========================================================== */
+
+.summary{
+
+    margin-bottom:24px;
+
+}
+
+.summary h2{
+
+    font-size:28px;
+
+    margin-bottom:12px;
+
+}
+
+.summary p{
+
+    font-size:16px;
+
+    line-height:1.6;
+
+    margin-bottom:20px;
+
+}
+
+.summary-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:16px;
+
+}
+
+.summary-stats div{
+
+    background:#F8FAFC;
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:16px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.summary-stats div:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.summary-stats h3{
+
+    font-size:26px;
+
+    color:var(--primary);
+
+    margin-bottom:6px;
+
+}
+
+/* ==========================================================
+   SOURCE GRID
+========================================================== */
+
+.sources{
+
+    margin-bottom:28px;
+
+}
+
+.source-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:16px;
+
+}
+
+/* ==========================================================
+   SOURCE CARD
+========================================================== */
+
+.source-card{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:18px;
+
+    transition:.3s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.source-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.source-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.source-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    background:#EFF6FF;
+
+    color:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.source-title{
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+.source-description{
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}
+
+.source-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:auto;
+
+}
+
+.source-link{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   BADGES
+========================================================== */
+
+.badge{
+
+    font-size:13px;
+
+    padding:7px 14px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+}
+
+.badge-paper{
+
+    background:#FEF3C7;
+
+    color:#B45309;
+
+}
+
+.badge-github{
+
+    background:#EDE9FE;
+
+    color:#6D28D9;
+
+}
+
+.badge-web{
+
+    background:#DBEAFE;
+
+    color:#1D4ED8;
+
+}
+
+/* ==========================================================
+   COMPARISON TABLE
+========================================================== */
+
+.comparison{
+
+    margin-bottom:28px;
+
+}
+
+.table-wrapper{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid var(--border);
+
+}
+
+table{
+
+    width:100%;
+
+}
+
+thead{
+
+    background:#F8FAFC;
+
+}
+
+th{
+
+    text-align:left;
+
+    padding:18px;
+
+    font-size:15px;
+
+}
+
+td{
+
+    padding:18px;
+
+    border-top:1px solid var(--border);
+
+    color:var(--text-secondary);
+
+}
+
+tbody tr{
+
+    transition:.25s;
+
+}
+
+tbody tr:hover{
+
+    background:#F9FAFB;
+
+}
+
+/* ==========================================================
+   GAP ANALYSIS
+========================================================== */
+
+.gap-analysis{
+
+    margin-bottom:28px;
+
+    border-left:5px solid var(--primary);
+
+}
+
+.gap-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:18px;
+
+}
+
+.gap-header svg{
+
+    color:#2563EB;
+
+}
+
+.gap-analysis p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   TECH STACK
+========================================================== */
+
+.tech-stack{
+
+    margin-bottom:28px;
+
+}
+
+.tech-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.tech-chip{
+
+    background:#F3F4F6;
+
+    padding:10px 16px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.tech-chip:hover{
+
+    background:#DBEAFE;
+
+    color:#1D4ED8;
+
+}
+
+/* ==========================================================
+   CONTINUE BUTTON
+========================================================== */
+
+.next-step{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:900px){
+
+.summary-stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.source-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.table-wrapper{
+
+    overflow-x:auto;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.research-container{
+
+    padding:25px;
+
+}
+
+.section-title{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+}
+
+.summary h2{
+
+    font-size:26px;
+
+}
+
+}
+/* ==========================================
+AI INSIGHTS
+========================================== */
+
+.insights{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:16px;
+
+    margin:20px 0;
+
+}
+
+.insight-card{
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.insight-card h2{
+
+    margin-bottom:18px;
+
+}
+
+.insight-card ul{
+
+    padding-left:20px;
+
+}
+
+.insight-card li{
+
+    margin-bottom:12px;
+
+    line-height:1.6;
+
+}
+/* ==========================================
+Large Laptop Optimization
+========================================== */
+
+@media (min-width:1200px){
+
+    .research-container{
+
+        max-width:1150px;
+
+    }
+
+}
+
+/* ==========================================
+Desktop Optimization
+========================================== */
+
+@media (min-width:1500px){
+
+    .research-container{
+
+        max-width:1300px;
+
+    }
+
+}

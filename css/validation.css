@@ -1,0 +1,463 @@
+/* ==========================================================
+   VALIDATION OVERLAY
+========================================================== */
+
+.validation-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(248,250,252,.92);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    overflow-y:auto;
+
+    padding:40px 20px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:9999;
+
+}
+
+.validation-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/* ==========================================================
+   VALIDATION CONTAINER
+========================================================== */
+
+.validation-container{
+
+    width:min(650px,95%);
+
+    margin:auto;
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    box-shadow:0 25px 60px rgba(15,23,42,.12);
+
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.validation-title{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.validation-subtitle{
+
+    color:var(--text-secondary);
+
+    margin-bottom:35px;
+
+}
+
+
+/* ==========================================================
+   PIPELINE
+========================================================== */
+
+.pipeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.pipeline-step{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    opacity:.35;
+
+    transition:.4s;
+
+}
+
+.pipeline-step.active{
+
+    opacity:1;
+
+}
+
+.pipeline-step.completed{
+
+    opacity:1;
+
+}
+
+
+/* ==========================================================
+   STEP ICON
+========================================================== */
+
+.step-icon{
+
+    width:36px;
+
+    height:36px;
+
+    border-radius:50%;
+
+    background:#E2E8F0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.pipeline-step.active .step-icon{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+}
+
+.pipeline-step.completed .step-icon{
+
+    background:#22C55E;
+
+    color:white;
+
+}
+
+
+/* ==========================================================
+   STEP TEXT
+========================================================== */
+
+.step-content h4{
+
+    font-size:16px;
+
+    margin-bottom:4px;
+
+}
+
+.step-content p{
+
+    font-size:14px;
+
+    color:var(--text-secondary);
+
+}
+
+
+/* ==========================================================
+   CONNECTOR
+========================================================== */
+
+.connector{
+
+    width:2px;
+
+    height:28px;
+
+    background:#E5E7EB;
+
+    margin-left:17px;
+
+}
+
+
+/* ==========================================================
+   SPINNER
+========================================================== */
+
+.spinner{
+
+    width:16px;
+
+    height:16px;
+
+    border:2px solid #CBD5E1;
+
+    border-top-color:#2563EB;
+
+    border-radius:50%;
+
+    animation:spin .8s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* ==========================================================
+   PROGRESS BAR
+========================================================== */
+
+.progress{
+
+    margin-top:32px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:8px;
+
+    background:#E5E7EB;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #2563EB,
+        #3B82F6
+    );
+
+    transition:width .5s ease;
+
+}
+
+.progress-text{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:10px;
+
+    font-size:14px;
+
+    color:var(--text-secondary);
+
+}
+
+
+/* ==========================================================
+   VERDICT CARD
+========================================================== */
+
+.verdict-card{
+
+    display:none;
+
+    margin-top:40px;
+
+    border-top:1px solid var(--border);
+
+    padding-top:30px;
+
+}
+
+.verdict-card.show{
+
+    display:block;
+
+    animation:fadeUp .5s ease;
+
+}
+
+.score{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.verdict{
+
+    color:#16A34A;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+.confidence{
+
+    color:var(--text-secondary);
+
+    margin-bottom:24px;
+
+}
+
+
+/* ==========================================================
+   IDEA COMPARISON
+========================================================== */
+
+.idea-comparison{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+    margin:30px 0;
+
+}
+
+.idea-box-small{
+
+    padding:18px;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    background:#F8FAFC;
+
+}
+
+.idea-box-small h5{
+
+    margin-bottom:10px;
+
+}
+
+.idea-box-small p{
+
+    color:var(--text);
+
+}
+
+
+/* ==========================================================
+   REASONS
+========================================================== */
+
+.reasons{
+
+    margin-top:20px;
+
+}
+
+.reasons li{
+
+    padding:10px 0;
+
+    color:var(--text-secondary);
+
+}
+
+
+/* ==========================================================
+   CONTINUE BUTTON
+========================================================== */
+
+.continue-btn{
+
+    margin-top:35px;
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+.validation-container{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+.idea-comparison{
+
+    grid-template-columns:1fr;
+
+}
+
+}

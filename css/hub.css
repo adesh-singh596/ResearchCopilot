@@ -1,0 +1,505 @@
+/* ==========================================================
+   HUB PAGE
+========================================================== */
+
+.hub-container{
+    max-width:1300px;
+    margin:auto;
+    padding:48px;
+}
+
+.hub-container section{
+    margin-bottom:36px;
+}
+
+/* ==========================================================
+   OVERVIEW
+========================================================== */
+
+.overview h2{
+    margin-bottom:18px;
+}
+
+.overview p{
+    color:var(--text-secondary);
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.overview-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.metric{
+
+    background:#F8FAFC;
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:24px;
+
+    transition:.3s;
+
+    text-align:center;
+
+}
+
+.metric:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.metric h3{
+
+    font-size:30px;
+
+    color:var(--primary);
+
+    margin-bottom:6px;
+
+}
+
+.metric span{
+
+    color:var(--text-secondary);
+
+    font-size:14px;
+
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.card{
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:32px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+}
+
+.card h2{
+
+    margin-bottom:28px;
+
+}
+
+/* ==========================================================
+   ARCHITECTURE
+========================================================== */
+
+#architecture{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:20px 0;
+
+}
+
+.node{
+
+    width:260px;
+
+    padding:20px;
+
+    background:#F8FAFC;
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.node:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.node svg{
+
+    width:30px;
+
+    height:30px;
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+.node span{
+
+    display:block;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.node small{
+
+    color:var(--text-secondary);
+
+}
+
+.arrow{
+
+    font-size:28px;
+
+    color:#94A3B8;
+
+}
+
+/* ==========================================================
+   TECH GRID
+========================================================== */
+
+.tech-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:22px;
+
+}
+
+.tech-card{
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:22px;
+
+    transition:.3s;
+
+    background:white;
+
+}
+
+.tech-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.tech-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:16px;
+
+}
+
+.tech-title{
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+.tech-role{
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.tech-description{
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   ROADMAP
+========================================================== */
+
+.roadmap{
+
+    position:relative;
+
+    padding-left:28px;
+
+}
+
+.roadmap::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:10px;
+
+    top:0;
+
+    bottom:0;
+
+    width:3px;
+
+    background:#E2E8F0;
+
+}
+
+.roadmap-step{
+
+    position:relative;
+
+    margin-bottom:36px;
+
+    padding-left:24px;
+
+}
+
+.roadmap-step:last-child{
+
+    margin-bottom:0;
+
+}
+
+.roadmap-step::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-24px;
+
+    top:6px;
+
+    width:16px;
+
+    height:16px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    border:4px solid white;
+
+    box-shadow:0 0 0 2px var(--primary);
+
+}
+
+.roadmap-step h3{
+
+    margin-bottom:10px;
+
+}
+
+.roadmap-step ul{
+
+    padding-left:18px;
+
+}
+
+.roadmap-step li{
+
+    margin-bottom:8px;
+
+    color:var(--text-secondary);
+
+}
+
+/* ==========================================================
+   FEATURES
+========================================================== */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:18px;
+
+}
+
+.feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    transition:.25s;
+
+}
+
+.feature:hover{
+
+    transform:translateY(-3px);
+
+    background:#F8FAFC;
+
+}
+
+.feature svg{
+
+    color:#22C55E;
+
+}
+
+/* ==========================================================
+   DELIVERABLES
+========================================================== */
+
+.deliverables{
+
+    list-style:none;
+
+    display:grid;
+
+    gap:16px;
+
+}
+
+.deliverables li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    background:#F8FAFC;
+
+}
+
+.deliverables svg{
+
+    color:#16A34A;
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.hub-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:20px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1000px){
+
+    .overview-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hub-container{
+
+        padding:24px;
+
+    }
+
+    .overview-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .tech-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .feature-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .node{
+
+        width:100%;
+
+    }
+
+    .hub-footer{
+
+        justify-content:center;
+
+    }
+
+    .hub-footer .primary-btn{
+
+        width:100%;
+
+    }
+
+}
