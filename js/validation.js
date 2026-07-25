@@ -74,7 +74,7 @@ async function startValidation() {
         console.log("4. About to call fetch");
 
         const response = await fetch(
-            "https://researchcopilot-8x1d.onrender.com",
+            "https://researchcopilot-8x1d.onrender.com/validate/",
             {
                 method: "POST",
                 headers: {
